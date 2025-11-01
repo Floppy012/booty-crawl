@@ -162,11 +162,11 @@ def crawl_ekomi_reviews():
 
 if __name__ == "__main__":
     print("Starting crawl for Trustpilot...")
-    tp_reviews = [] #crawl_trustpilot_reviews()
+    tp_reviews = crawl_trustpilot_reviews()
     print(f"Trustpilot crawl complete. {len(tp_reviews)} reviews found.")
 
     print("Starting crawl for TrustedShops...")
-    ts_reviews = [] #crawl_trustedshops_reviews()
+    ts_reviews = crawl_trustedshops_reviews()
     print(f"TrustedShops crawl complete. {len(ts_reviews)} reviews found.")
 
     print("Starting crawl for eKomi...")
